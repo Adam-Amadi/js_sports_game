@@ -19,12 +19,17 @@ var GoalAudio = "assets/audio/goal-shout.mp3"
 
 gameReset.addEventListener("click", function () {
     let newResetCount = Number(resetCount.innerHTML) + 1;
-
+    resetCount.innerHTML = newResetCount;
+    if (teamOneGoals.innerHTML > teamTwoGoals.innerHTML){
+        alert("Team 1 Won Congratulation!");}
+    if (teamTwoGoals.innerHTML>teamOneGoals.innerHTML){
+        alert("Team 2 Won Congratulation!");
+    }
     teamOneShots.innerHTML = 0;
     teamOneGoals.innerHTML = 0;
     teamTwoShots.innerHTML = 0;
     teamTwoGoals.innerHTML = 0;
-    resetCount.innerHTML = newResetCount;
+   
     
 
 
