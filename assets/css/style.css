@@ -1,3 +1,32 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+    background-image: url(../Image/football-background1.jpg);
+    background-size: cover;
+
+}
+
+body button {
+    background-color:#6fba26;
+	padding:10px;
+	position:relative;
+	font-family: 'Open Sans', sans-serif;
+    font-size:12px;
+    font-weight: bold;
+	text-decoration:none;
+	color:rgb(255, 0, 0);
+	background-image: linear-gradient(bottom, rgb(34, 156, 204) 0%, rgb(26, 36, 17) 100%);
+	box-shadow: inset 0px 1px 0px #79ccf3, 0px 6px 0px #4d5348;
+    border-radius: 5px;
+}
+
+#reset-button {
+    top:-10px;
+
+}
+
+
+
 .hide {
     display: none;
 }
