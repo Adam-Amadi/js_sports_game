@@ -14,7 +14,7 @@ let teamTwoShots = document.querySelector("#teamtwo-numshots")
 let teamTwoGoals = document.querySelector("#teamtwo-numgoals")
 
 // * Audio * //
-var GoalAudio = "assets/audio/goal-shout.mp3"
+const SoundAudio = "assets/audio/goal-shout.mp3"
 
 
 gameReset.addEventListener("click", function () {
@@ -39,7 +39,7 @@ teamOneShoot.addEventListener("click", function () {
     let newTeamOneShots = Number(teamOneShots.innerHTML) + 1;
     let x = Math.floor(Math.random() * 10);
     if (x % 2 == 0) {
-        x = Number(teamOneGoals.innerHTML) + 1; playAudio(GoalAudio);
+        x = Number(teamOneGoals.innerHTML) + 1; playAudio(SoundAudio);
         teamOneGoals.innerHTML = x
          
     }
@@ -52,7 +52,7 @@ teamTwoShoot.addEventListener("click", function () {
     let newTeamTwoShots = Number(teamTwoShots.innerHTML) + 1;
     let x = Math.floor(Math.random() * 10);
     if (x % 2 == 1) {
-        x = Number(teamTwoGoals.innerHTML) + 1; playAudio(GoalAudio);
+        x = Number(teamTwoGoals.innerHTML) + 1; playAudio(SoundAudio);
         teamTwoGoals.innerHTML = x
     }
    
@@ -60,7 +60,6 @@ teamTwoShoot.addEventListener("click", function () {
 
     
 })
-
 
 
 function playAudio(url) {
